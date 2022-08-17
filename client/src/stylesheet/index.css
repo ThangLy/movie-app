@@ -1,0 +1,230 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.banner-card {
+    width: 100vw;
+
+    position: relative;
+    height: 70vh;
+    color: white;
+}
+
+.banner-img {
+    height: 70vh;
+    width: 100%;
+}
+
+.banner-title {
+    position: absolute;
+    top: 45vh;
+    left: 5vw;
+}
+
+.banner-text {
+    position: absolute;
+    top: 55vh;
+    left: 5vw;
+    height: 4.5rem;
+    overflow: hidden;
+    margin-right: 5vw;
+}
+
+.movies-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.movies-card {
+    width: 20vw;
+    margin: 1rem;
+    color: white;
+    position: relative;
+}
+
+.movies-title {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+
+}
+
+.movies-img {
+    height: 20vw;
+    width: 20vw;
+}
+
+.vote-count {
+    color: #000;
+    margin-bottom: 0px;
+    left: 16px;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    position: relative;
+
+}
+
+.like-button {
+    color: darkred;
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+
+.dislike-button {
+    color: darkred;
+    position: absolute;
+    bottom: 0px;
+    right: 16px;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width:400px) {
+    .banner-card {
+        height: 30vh;
+    }
+
+    .banner-img {
+        height: 30vh;
+    }
+
+    .banner-title {
+        top: 12vh;
+        left: 5vw
+    }
+
+    .banner-text {
+        top: 17vh;
+        left: 5vw;
+    }
+
+    .movies-card {
+        width: 40vw;
+        margin: 0.1rem;
+    }
+
+    .movies-button {
+        width: 80%;
+    }
+
+    .movies-img {
+        height: 227.2px;
+        width: 40vw;
+    }
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-Size: '50px',
+
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    background-color: rebeccapurple;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.formInput {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input {
+    padding: 15px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+span {
+    font-size: 12px;
+    padding: 3px;
+    color: red;
+    display: none;
+}
+
+input:invalid[focused="true"] {
+    border: 1px solid red;
+}
+
+input:invalid[focused="true"]~span {
+    display: block;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.3)),
+        url("https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background-size: cover;
+    background-position: center;
+}
+
+.login .container {
+    width: 100%;
+    height: 100%;
+    position: center;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.login .container form {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.login .container form input {
+    height: 40px;
+    border-radius: 5px;
+    background-color: gray;
+    color: white;
+    padding-left: 10px;
+}
+
+.login .container form input::placeholder {
+    color: lightgray;
+}
+
+.login .container form button {
+    height: 40px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
