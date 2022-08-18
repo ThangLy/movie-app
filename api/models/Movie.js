@@ -6,6 +6,7 @@ const MovieSchema = new mongoose.Schema(
         desc: { type: String },
         img: { type: String },
         vote_count: { type: Number },
+        likes: { type: String, ref: "User" },
     },
     { timestamps: true }
 );

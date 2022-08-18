@@ -10,7 +10,7 @@ const Header = () => {
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
                 <Navbar.Brand href="/">Welcome {username}</Navbar.Brand>
-                {/* <Navbar.Brand href="/login">Logout</Navbar.Brand> */}
+                <Navbar.Brand href="/login" onClick={() => auth.logout()}>Logout</Navbar.Brand>
             </Container>
         </Navbar>
     );

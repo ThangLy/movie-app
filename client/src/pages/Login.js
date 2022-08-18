@@ -5,7 +5,7 @@ import { useAuth } from '../context/auth';
 
 
 const Login = () => {
-    const [email, setEmail] = useState("");
+    // const [email, setEmail] = useState("");
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [validate, setValidate] = useState(true);
@@ -28,7 +28,7 @@ const Login = () => {
                 url: 'http://localhost:8000/api/auth/login',
                 data: {
                     username,
-                    email,
+                    // email,
                     password
                 },
             });
@@ -36,7 +36,7 @@ const Login = () => {
                 setValidate(false);
             } else {
                 setValidate(true);
-                //auth.login({ $or: [{ email: response.data.email }, { username: response.data.username }] }, () => {
+                // auth.login({ email: response.data.email }, () => {
                 auth.login({ username: response.data.username }, () => {
 
                     navigate(from, { replace: true });
